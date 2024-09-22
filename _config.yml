@@ -1,0 +1,6 @@
+title: "Data Team Hub"
+description: "A website for the data team"
+theme: jekyll-theme-minimal
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
