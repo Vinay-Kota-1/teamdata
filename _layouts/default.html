@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/datasets' | relative_url }}">Shared Datasets</a></li>
+        <li><a href="{{ '/updates' | relative_url }}">Project Updates</a></li>
+        <li><a href="{{ '/practices' | relative_url }}">Best Practices</a></li>
+        <li><a href="{{ '/queries' | relative_url }}">Collaborate on Queries</a></li>
+        <li><a href="{{ '/documentation' | relative_url }}">Documentation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>This project is maintained by the Data Team.</p>
+    <p>Team Members: Vinay, Kota, and others.</p>
+  </footer>
+</body>
+</html>
